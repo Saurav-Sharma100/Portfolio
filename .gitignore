@@ -3,3 +3,4 @@
 .sites-archive-*/
 __pycache__/
 *.pyc
+_site/
