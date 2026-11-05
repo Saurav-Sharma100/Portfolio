@@ -1,0 +1,56 @@
+{
+  "name": "Saurav Chander Sharma",
+  "email": "chandersaurav2016@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/saurav-chander-sharma/",
+  "github": "https://github.com/Saurav-Sharma100",
+  "certificate": "https://github.com/Saurav-Sharma100/Certificates/blob/main/Certificate.PNG",
+  "skills": {
+    "Programming": ["SQL", "Python"],
+    "Data visualization": ["Power BI (DAX)", "Tableau", "Microsoft Excel"],
+    "Python libraries": ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    "Warehousing & cloud": ["Google BigQuery", "Snowflake"],
+    "Transformation & modeling": ["dbt Core", "Data Modeling", "Star Schema", "Power Query", "Tableau Prep"],
+    "Analytics & applications": ["Streamlit", "Vanna AI", "Data Cleaning", "Exploratory Data Analysis (EDA)", "KPI Development", "Statistical Analysis"]
+  },
+  "projects": [
+    {
+      "slug": "ga4-ecommerce", "dashboardUrl": "https://app.powerbi.com/view?r=eyJrIjoiNWQ5NmJkNGEtMDU4Yy00MzI5LTlmY2ItYWZmOWIwZjUyN2RjIiwidCI6IjI2ZDhiYTNlLTk1N2QtNDgwMS05ODI5LWQ3OGI4MzI2YWMzMSJ9", "title": "Ecommerce Analysis on Google Analytics Data", "shortTitle": "Understanding the ecommerce journey", "category": "ECOMMERCE ANALYTICS", "date": "August 2026",
+      "stack": ["BigQuery", "dbt Core", "Power BI", "Vanna AI"],
+      "summary": "Turned nested GA4 events into tested analytics marts and Power BI dashboards to examine acquisition, funnel behavior, and product performance.",
+      "question": "Where do users drop out of the ecommerce journey, and how do acquisition, funnel, and product patterns compare?",
+      "metric": "~72%", "metricLabel": "product-view → add-to-cart drop-off",
+      "scope": ["3 fact tables", "5 dimension tables", "3 Power BI dashboards"],
+      "methodology": ["Transformed nested GA4 ecommerce events in BigQuery with dbt Core, separating staging, intermediate, and mart layers.", "Built three fact tables and five dimension tables, with data-quality tests to support reliable analysis.", "Developed acquisition, funnel, and product dashboards in Power BI, and integrated Vanna AI for natural-language SQL queries against curated marts."],
+      "findings": ["Approximately 72% of product views did not progress to add-to-cart, highlighting the largest bottleneck in the analyzed purchase funnel.", "Acquisition, funnel, and product views make it possible to investigate the journey from multiple analytical perspectives."],
+      "limitations": "The drop-off is an observed funnel metric. It does not establish why visitors left, demonstrate a particular design problem, or prove that a change improved conversion.",
+      "repo": "Ecommerce-Analysis-on-Google-Analytics-Data",
+      "images": ["Acquisition dashboard: sessions, channel conversion, and purchase behavior", "Purchase funnel dashboard", "Product analysis dashboard", "Project data model", "Project analytics architecture"]
+    },
+    {
+      "slug": "fintech-payments", "dashboardUrl": "https://app.powerbi.com/view?r=eyJrIjoiNTU4OTYzZjAtNTA1OC00ZDhlLTk5MWItOGRhYzIwNzYyMjRhIiwidCI6IjI2ZDhiYTNlLTk1N2QtNDgwMS05ODI5LWQ3OGI4MzI2YWMzMSJ9", "title": "Fintech Payments and Customer Segmentation", "shortTitle": "Connecting payments to customer health", "category": "FINTECH & CUSTOMER ANALYTICS", "date": "August 2026",
+      "stack": ["BigQuery", "SQL", "Power BI"],
+      "summary": "Analyzed payment reliability, customer behavior, and retention risk across 416,747 transactions and 5,000 merchants.",
+      "question": "How can payment reliability, support signals, and customer behavior reveal operational and retention risks?",
+      "metric": "416,747", "metricLabel": "transactions analyzed · 5.08% failure rate",
+      "scope": ["5,000 merchants", "2,322 payment-related tickets", "$19.07M transaction volume"],
+      "methodology": ["Analyzed transaction activity in BigQuery SQL and integrated payment failures, support tickets, and disputes into a star-schema data model.", "Developed RFM customer segmentation and customer health scoring to connect payment behavior with potential retention risk.", "Built an interactive Power BI dashboard for payment performance, customer segments, and risk indicators."],
+      "findings": ["A 5.08% payment failure rate and 2,322 payment-related support tickets highlighted operational risk in the analyzed dataset.", "The dashboard tracked $19.07M in transaction volume and $4.1K in model-derived at-risk monthly recurring revenue (MRR)."],
+      "limitations": "Transaction volume is not company revenue. At-risk MRR is a model-derived measure within this portfolio analysis, not validated revenue loss or a demonstrated retention outcome. The original dashboard's trend heading refers to revenue; its plotted measure is transaction volume.",
+      "repo": "Fintech-Payments-and-Customer-Segmentation",
+      "images": ["Power BI payment performance and RFM segmentation dashboard", "Fintech star-schema data model"]
+    },
+    {
+      "slug": "bank-expansion", "dashboardUrl": "https://public.tableau.com/shared/H99S4HMY6?:display_count=n&:origin=viz_share_link", "title": "Bank Branch Expansion Analysis", "shortTitle": "Finding the next banking opportunity", "category": "LOCATION & DECISION ANALYTICS", "date": "July 2026",
+      "stack": ["Python", "Tableau", "Streamlit"],
+      "summary": "Combined geographic and deposit data to identify underserved markets and build an interactive branch-expansion simulator.",
+      "question": "Where might a bank consider new branches when deposit opportunity and existing competition vary by ZIP code?",
+      "metric": "73,876", "metricLabel": "U.S. bank branches · 17,971 ZIP codes",
+      "scope": ["17,971 ZIP codes", "16% of ZIPs hold 80% of deposits", "$15M simulated budget"],
+      "methodology": ["Analyzed 73,876 U.S. bank branches across 17,971 ZIP codes, exploring the geographic distribution of deposits and branch density.", "Developed a Python opportunity-scoring model combining deposit potential with existing branch density, and visualized underserved markets in Tableau.", "Built a Streamlit simulator using greedy optimization and Haversine distance, with a simulated $15M expansion budget, $2M per branch, and geographic-spacing constraints."],
+      "findings": ["16% of ZIP codes accounted for 80% of deposits in the analyzed data, showing a concentrated distribution of banking activity.", "Opportunity scoring and geographic constraints provide an explorable starting point for comparing candidate branch locations."],
+      "limitations": "The recommendation engine and budget are a simulation, not a real bank investment or implemented location plan. Greedy optimization is a heuristic; recommendations depend on the selected scoring and distance assumptions.",
+      "repo": "Bank-Branch-Expansion-Analysis", "demo": "https://bankbranchapp.streamlit.app/",
+      "images": ["Tableau national opportunity map, ZIP rankings, deposit concentration, and state summary", "Streamlit branch-expansion simulator"]
+    }
+  ]
+}

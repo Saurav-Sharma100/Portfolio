@@ -1,0 +1,5 @@
+# Generated deployment packages and local caches
+*.tar.gz
+.sites-archive-*/
+__pycache__/
+*.pyc
