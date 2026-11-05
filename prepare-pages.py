@@ -8,7 +8,7 @@ from urllib.parse import urlsplit, unquote
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / 'saurav-portfolio' / 'dist'
 OUTPUT = ROOT / '_site'
-BASE = '/Website'
+BASE = '/Portfolio'
 ORIGIN = 'https://saurav-sharma100.github.io' + BASE
 SITES_ORIGIN = 'https://saurav-sharma-data-portfolio.chandersaurav2016.chatgpt.site'
 
